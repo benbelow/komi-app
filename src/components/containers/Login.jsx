@@ -25,7 +25,7 @@ class Login extends Component {
       name, email, password, passwordConfirmation,
     } = this.state
     if (!isEmail(email)) {
-      this.setState({ error: 'Your email must be an email adress' })
+      this.setState({ error: 'Your email must be an email address' })
     } else if (password.length < 8) {
       this.setState({ error: 'Your password must be at least 8 characters' })
     } else if (!this.props.newUser) {
